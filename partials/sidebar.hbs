@@ -40,9 +40,10 @@
 
         {{!-- Footer --}}
         <footer id="footer">
-            <p class="copyright">&copy; {{@site.title}} - All rights reserved<br>
+            <p class="copyright">&copy; {{date format="YYYY"}} {{@site.title}} <a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener" id="beian_link"></a><br>
             Design: <a href="https://html5up.net" target="_blank" rel="noopener">HTML5 UP</a>, Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></p>
         </footer>
+        <script>document.getElementById("beian_link").innerHTML=beian_number</script>
 
     </div>
 </div>
